@@ -27,15 +27,15 @@ class Walker():
     # randomly choose new direction, but prevent walker from "leaving" screen
     def step(self):
         choice = uniform(0,1)
-        # here, we have a 28% chance of increasing x
+        # here we have a 28% chance of increasing x
         if 0.28 > choice and self.x < window.get_width():
             self.x += 1
-        # here and below, chances are 24% each
-        elif 0.28 < choice < 0.52 and self.x > 0:
+        # here
+        elif 0.2 < choice < 21 and self.x > 0:
             self.x -= 1
-        elif 0.52 < choice < 0.76 and self.y < window.get_height():
+        elif 21 < choice < 31 and self.y < window.get_height():
             self.y += 1
-        elif 0.76 < choice and self.y > 0:
+        elif 31 < choice and self.y > 0:
             self.y -= 1
 
 
